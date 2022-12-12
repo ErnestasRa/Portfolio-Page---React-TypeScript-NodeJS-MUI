@@ -6,8 +6,11 @@ module.exports = {
   extends: ["airbnb", "airbnb-typescript"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "./tsconfig.json",
+    project: "tsconfig.json",
+    tsconfigRootDir: __dirname,
+    sourceType: "module",
   },
+  ignorePatterns: ["babel.config.js"],
   rules: {
     "react/button-has-type": [0],
     "react/prop-types": [0],

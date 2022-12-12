@@ -1,16 +1,15 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Container,
   Box,
-  Paper,
-} from '@mui/material'
-import ResponsiveAppBar from "../components/form-controls/app-bar";
+} from '@mui/material';
+import ResponsiveAppBar from '../components/form-controls/app-bar';
 
-const MainPage: React.FC = () => {
-  return <Container>
+const MainPage: React.FC = () => (
+  <Container>
     <ResponsiveAppBar />
     <Box>Hi</Box>
   </Container>
-};
+);
 
 export default MainPage;
