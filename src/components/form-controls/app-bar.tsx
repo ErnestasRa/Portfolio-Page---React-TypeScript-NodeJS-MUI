@@ -13,7 +13,7 @@ import {
   MenuItem,
 } from '@mui/material';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Main Page', 'Contact me', 'Download CV'];
 
 const ResponsiveAppBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
