@@ -5,6 +5,7 @@ import {
 } from '@mui/material';
 import PictureBox from 'components/profile-picture/picture-box';
 import AboutMe from 'components/about-me/about-me';
+import AppsIveBuilt from 'components/about-me/apps-ive-built';
 import ResponsiveAppBar from '../components/form-controls/app-bar';
 
 const MainPage: React.FC = () => (
@@ -20,6 +21,9 @@ const MainPage: React.FC = () => (
     >
       <PictureBox />
       <AboutMe />
+    </Paper>
+    <Paper sx={{ mt: '2vh' }}>
+      <AppsIveBuilt />
     </Paper>
   </Container>
 );
