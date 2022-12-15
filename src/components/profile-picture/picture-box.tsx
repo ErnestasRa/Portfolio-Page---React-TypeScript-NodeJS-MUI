@@ -10,12 +10,13 @@ const PictureBox: React.FC = () => (
     component="img"
     src={ProfilePic}
     sx={{
-  objectFit: 'contain',
-  height: 400,
-  width: 400,
-  borderRadius: 400,
-  maxHeight: { xs: 300, md: 400 },
-  maxWidth: { xs: 300, md: 400 },
+  margin: '2vh',
+  objectFit: 'cover',
+  height: 250,
+  width: 250,
+  borderRadius: { xs: 50, md: 2000 },
+  maxHeight: { xs: 150, md: 300 },
+  maxWidth: { xs: 150, md: 300 },
 }}
   />
   );

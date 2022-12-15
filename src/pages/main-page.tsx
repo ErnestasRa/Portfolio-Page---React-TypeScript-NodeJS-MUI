@@ -12,9 +12,9 @@ const MainPage: React.FC = () => (
     <ResponsiveAppBar />
     <Paper sx={{
       display: 'flex',
-      flexDirection: 'column',
+      flexDirection: { xs: 'column', md: 'row' },
       alignContent: 'center',
-      alignItems: 'center',
+      alignItems: { xs: 'center', md: 'center' },
       mt: '3vh',
     }}
     >
