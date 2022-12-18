@@ -1,27 +1,51 @@
 import * as React from 'react';
 import {
-    Box,
-    Typography,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Typography,
+  Link,
 } from '@mui/material';
-import BudgetTwitter from '../../images/budgettwitter.jpg';
 
-const AppsBox:React.FC = () => (
-  <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-    <Box
+type AppMediaCardType = {
+  image: string,
+  title: string,
+  description: string,
+  link: string,
+};
+
+const AppMediaCard:React.FC<AppMediaCardType> = ({
+    image,
+    title,
+    description,
+    link,
+}) => (
+  <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
       component="img"
-      alt="budget-twitter"
-      src={BudgetTwitter}
+      alt="green iguana"
+      height="120"
+      image={image}
       sx={{
-        margin: '2vh',
-        objectFit: 'cover',
-        height: 250,
-        width: 250,
-        maxHeight: { xs: 150, md: 300 },
-        maxWidth: { xs: 150, md: 300 },
+        objectFit: 'fill',
       }}
     />
-    <Typography>Budget Twitter</Typography>
-  </Box>
+    <CardContent>
+      <Typography gutterBottom variant="h5" component="div">
+        {title}
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        {description}
+      </Typography>
+    </CardContent>
+    <CardActions>
+      <Link href={link}>
+        View Github Code
+
+      </Link>
+    </CardActions>
+  </Card>
   );
 
-export default AppsBox;
+export default AppMediaCard;
