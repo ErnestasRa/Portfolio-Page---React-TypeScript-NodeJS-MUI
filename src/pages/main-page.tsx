@@ -11,6 +11,7 @@ import AppMediaCard from 'components/my-apps/apps-box';
 import ResponsiveAppBar from '../components/form-controls/app-bar';
 import BudgetTwitter from '../images/budgettwitter.jpg';
 import GameRock from '../images/gamerock.jpg';
+import PortfolioPic from '../images/portfoliopic.jpg';
 
 const MainPage: React.FC = () => (
   <Container>
@@ -42,10 +43,10 @@ const MainPage: React.FC = () => (
           link="https://github.com/ErnestasRa/Simple-rock-paper-scissors-game-made-with-React-NodeJS-MongoDB-Login-session-cookies-and-game-logic"
         />
         <AppMediaCard
-          image={BudgetTwitter}
-          title="Budget Twitter"
-          description="Budget Twitter - made with React, NodeJS, MongoDB, JEST, MaterialUI, Authorization, Middleware etc."
-          link="#"
+          image={PortfolioPic}
+          title="My Portfolio"
+          description="My Portfolio - Made with TypeScript, React, NodeJS, MongoDB, JEST, MaterialUI, Eslint(AirBnb) etc."
+          link="https://github.com/ErnestasRa/Portfolio-Page---React-TypeScript-NodeJS-MUI"
         />
       </Box>
     </Paper>
