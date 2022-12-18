@@ -6,11 +6,10 @@ import {
 import Typography from '@mui/material/Typography';
 
 const AppsIveBuilt:React.FC = () => (
-  <Box sx={{ display: 'flex' }}>
+  <Box sx={{ display: 'flex', justifyContent: 'center' }}>
     <TerminalIcon sx={{ fontSize: { xs: '5vh', md: '8vh' } }} />
-    <Typography>Apps I`ve built:</Typography>
+    <Typography sx={{ fontFamily: 'cursive', mt: { xs: '1vh', md: '2vh' } }}>My small projects:</Typography>
   </Box>
   );
 
 export default AppsIveBuilt;
-// TODO - Fix apps ive built icon

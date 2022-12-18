@@ -3,7 +3,6 @@ import {
     Box,
     Typography,
 } from '@mui/material';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MediaIcons from './media-icons';
 
 const AboutMe: React.FC = () => (
@@ -21,11 +20,6 @@ const AboutMe: React.FC = () => (
     </Typography>
     <Typography sx={{ textAlign: { md: 'inherit', xs: 'center' }, fontFamily: 'cursive' }}>
       I`am React with TypeScript MERN stack Developer.
-    </Typography>
-    <Typography sx={{ textAlign: { md: 'inherit', xs: 'center' }, fontFamily: 'cursive', mt: '2vh' }}>
-      Contact me here
-      {' '}
-      <KeyboardArrowDownIcon sx={{ mt: '1vh' }} />
     </Typography>
     <MediaIcons />
   </Box>

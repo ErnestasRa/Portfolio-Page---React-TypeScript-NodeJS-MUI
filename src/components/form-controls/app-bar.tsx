@@ -46,7 +46,7 @@ const ResponsiveAppBar: React.FC = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Portfolio
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -102,7 +102,7 @@ const ResponsiveAppBar: React.FC = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Portfolio
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
