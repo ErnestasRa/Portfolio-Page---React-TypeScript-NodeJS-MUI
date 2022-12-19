@@ -33,7 +33,7 @@ const MainPage: React.FC = () => (
     mt: '2vh',
     display: 'flex',
     flexDirection: 'column',
-  }}
+   }}
     >
       <ContactMe />
       <ContactMeInputs />
