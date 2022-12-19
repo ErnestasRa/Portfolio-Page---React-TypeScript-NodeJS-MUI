@@ -27,9 +27,7 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
       alt="green iguana"
       height="120"
       image={image}
-      sx={{
-        objectFit: 'fill',
-      }}
+      sx={{ objectFit: 'fill' }}
     />
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">
@@ -42,7 +40,6 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
     <CardActions>
       <Link href={link} sx={{ textAlign: 'center' }}>
         View Github Code
-
       </Link>
     </CardActions>
   </Card>
