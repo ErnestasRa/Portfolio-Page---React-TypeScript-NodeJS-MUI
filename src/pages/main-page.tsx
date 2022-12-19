@@ -9,6 +9,7 @@ import AboutMe from 'components/about-me/about-me';
 import AppsIveBuilt from 'components/about-me/apps-ive-built';
 import AppMediaCard from 'components/my-apps/apps-box';
 import ContactMe from 'components/contact-me/contact-me';
+import ContactMeInputs from 'components/contact-me/contact-me-inputs';
 import ResponsiveAppBar from '../components/form-controls/app-bar';
 import BudgetTwitter from '../images/budgettwitter.jpg';
 import GameRock from '../images/gamerock.jpg';
@@ -51,8 +52,9 @@ const MainPage: React.FC = () => (
         />
       </Box>
     </Paper>
-    <Paper>
+    <Paper sx={{ mt: '2vh' }}>
       <ContactMe />
+      <ContactMeInputs />
     </Paper>
   </Container>
 );
