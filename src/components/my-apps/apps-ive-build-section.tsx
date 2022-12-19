@@ -8,7 +8,15 @@ import GameRock from '../../images/gamerock.jpg';
 import PortfolioPic from '../../images/portfoliopic.jpg';
 
 const AppsIveBuiltSection:React.FC = () => (
-  <Box sx={{ display: 'flex', gap: 3, flexDirection: { xs: 'column', md: 'row' } }}>
+  <Box sx={{
+    display: 'flex',
+    gap: 3,
+    flexDirection: { xs: 'column', md: 'row' },
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+     }}
+  >
     <AppMediaCard
       image={BudgetTwitter}
       title="Budget Twitter"
