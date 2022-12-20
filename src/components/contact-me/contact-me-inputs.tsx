@@ -3,6 +3,7 @@ import {
     Box,
     TextField,
     Button,
+    Typography,
 } from '@mui/material';
 import post from 'functions/http';
 
@@ -17,6 +18,8 @@ type MessageDataType = {
 };
 
 const ContactMeInputs: React.FC = () => {
+  const [error, setError] = React.useState(false);
+  const [errorMessage, setErrorMessage] = React.useState('');
   const nameRef: ContactMeInputsType = React.useRef(null);
   const emailRef: ContactMeInputsType = React.useRef(null);
   const messageRef: ContactMeInputsType = React.useRef(null);
@@ -28,8 +31,18 @@ const ContactMeInputs: React.FC = () => {
       message: messageRef.current!.value,
     };
     const res = await post('contactme', messageData);
-    // TODO - Fix current values
     console.log(res);
+
+    if (res.error) {
+      setErrorMessage(res.message);
+      setError(true);
+    } else {
+      setError(false);
+      setErrorMessage('');
+      nameRef.current!.value = '';
+      emailRef.current!.value = '';
+      messageRef.current!.value = '';
+    }
   };
 
 return (
@@ -47,12 +60,14 @@ return (
       id="standard-basic"
       label="Name"
       inputRef={nameRef}
+      error={error}
       variant="standard"
       sx={{ width: { xs: '80%', md: '50vh' } }}
     />
     <TextField
       id="standard-basic"
       label="Email"
+      error={error}
       inputRef={emailRef}
       variant="standard"
       sx={{ width: { xs: '80%', md: '50vh' } }}
@@ -61,11 +76,13 @@ return (
       id="standard-multiline-static"
       label="Message"
       inputRef={messageRef}
+      error={error}
       multiline
       rows={4}
       variant="standard"
       sx={{ width: { xs: '80%', md: '50vh' } }}
     />
+    <Typography sx={{ color: 'red' }}>{errorMessage}</Typography>
     <Button onClick={() => createMessage()}>Send me a message!</Button>
   </Box>
   );
