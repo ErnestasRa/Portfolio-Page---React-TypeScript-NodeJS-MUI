@@ -4,7 +4,7 @@ import {
     TextField,
     Button,
 } from '@mui/material';
-import { post } from 'functions/http';
+import post from 'functions/http';
 
 type ContactMeInputsType = {
   current: HTMLInputElement | null
@@ -16,14 +16,14 @@ const ContactMeInputs: React.FC = () => {
   const messageRef: ContactMeInputsType = React.useRef(null);
 
   const createMessage = async () => {
-    const messageData = {
+    const messageData: any = {
       name: nameRef.current!.value,
       email: emailRef.current!.value,
       message: messageRef.current!.value,
     };
-    // const res = await post("createtweet", tweetData);
+    const res = await post('contactme', messageData);
     // TODO - Fix current values
-    console.log(messageData);
+    console.log(res);
   };
 
 return (
