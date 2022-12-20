@@ -10,13 +10,19 @@ type ContactMeInputsType = {
   current: HTMLInputElement | null
 };
 
+type MessageDataType = {
+  name: string,
+  email: string,
+  message: string,
+};
+
 const ContactMeInputs: React.FC = () => {
   const nameRef: ContactMeInputsType = React.useRef(null);
   const emailRef: ContactMeInputsType = React.useRef(null);
   const messageRef: ContactMeInputsType = React.useRef(null);
 
   const createMessage = async () => {
-    const messageData: any = {
+    const messageData: MessageDataType = {
       name: nameRef.current!.value,
       email: emailRef.current!.value,
       message: messageRef.current!.value,
