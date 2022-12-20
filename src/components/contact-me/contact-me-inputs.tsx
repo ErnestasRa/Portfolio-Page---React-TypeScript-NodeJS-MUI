@@ -4,8 +4,29 @@ import {
     TextField,
     Button,
 } from '@mui/material';
+import { post } from 'functions/http';
 
-const ContactMeInputs: React.FC = () => (
+type ContactMeInputsType = {
+  current: HTMLInputElement | null
+};
+
+const ContactMeInputs: React.FC = () => {
+  const nameRef: ContactMeInputsType = React.useRef(null);
+  const emailRef: ContactMeInputsType = React.useRef(null);
+  const messageRef: ContactMeInputsType = React.useRef(null);
+
+  const createMessage = async () => {
+    const messageData = {
+      name: nameRef.current!.value,
+      email: emailRef.current!.value,
+      message: messageRef.current!.value,
+    };
+    // const res = await post("createtweet", tweetData);
+    // TODO - Fix current values
+    console.log(messageData);
+  };
+
+return (
   <Box sx={{
     display: 'flex',
     justifyContent: { md: 'center', xs: 'center' },
@@ -19,25 +40,28 @@ const ContactMeInputs: React.FC = () => (
     <TextField
       id="standard-basic"
       label="Name"
+      inputRef={nameRef}
       variant="standard"
       sx={{ width: { xs: '80%', md: '50vh' } }}
     />
     <TextField
       id="standard-basic"
       label="Email"
+      inputRef={emailRef}
       variant="standard"
       sx={{ width: { xs: '80%', md: '50vh' } }}
     />
     <TextField
       id="standard-multiline-static"
       label="Message"
+      inputRef={messageRef}
       multiline
       rows={4}
       variant="standard"
       sx={{ width: { xs: '80%', md: '50vh' } }}
     />
-    <Button>Send me a message!</Button>
+    <Button onClick={() => createMessage()}>Send me a message!</Button>
   </Box>
   );
-
+};
 export default ContactMeInputs;
