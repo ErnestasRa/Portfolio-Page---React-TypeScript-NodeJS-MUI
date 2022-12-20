@@ -9,6 +9,7 @@ import AppsIveBuilt from 'components/about-me/apps-ive-built';
 import ContactMe from 'components/contact-me/contact-me';
 import ContactMeInputs from 'components/contact-me/contact-me-inputs';
 import AppsIveBuiltSection from 'components/my-apps/apps-ive-build-section';
+import StickyFooter from 'components/footer/footer';
 import ResponsiveAppBar from '../components/form-controls/app-bar';
 
 const MainPage: React.FC = () => (
@@ -38,6 +39,7 @@ const MainPage: React.FC = () => (
       <ContactMe />
       <ContactMeInputs />
     </Paper>
+    <StickyFooter />
   </Container>
 );
 export default MainPage;
