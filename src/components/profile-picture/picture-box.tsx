@@ -2,16 +2,17 @@ import * as React from 'react';
 import {
     Box,
 } from '@mui/material';
+import profilePicture from '../../images/profile-pic.jpg';
 
 type PictureBoxType = {
   picture?: string | undefined
 };
 
-const PictureBox: React.FC<PictureBoxType> = ({ picture }) => (
+const PictureBox: React.FC<PictureBoxType> = () => (
   <Box
     alt="my profile image"
     component="img"
-    src={picture}
+    src={profilePicture}
     sx={{
   margin: '2vh',
   objectFit: 'cover',

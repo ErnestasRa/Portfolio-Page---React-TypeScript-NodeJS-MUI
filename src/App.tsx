@@ -4,12 +4,8 @@ import MainContext from 'context/main-context';
 import MyHobbies from 'pages/my-hobbies';
 import MainPage from './pages/main-page';
 
-const App: React.FC = () => {
-  const [profilePicture, setProfilePicture] = React.useState(undefined);
-  const profilePic = React.useMemo(() => ({ profilePicture, setProfilePicture }), []);
-
-return (
-  <MainContext.Provider value={profilePic}>
+const App: React.FC = () => (
+  <MainContext.Provider value={undefined}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
@@ -18,5 +14,4 @@ return (
     </BrowserRouter>
   </MainContext.Provider>
   );
-};
 export default App;
