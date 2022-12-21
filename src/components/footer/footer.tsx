@@ -8,8 +8,8 @@ import Link from '@mui/material/Link';
 const Copyright = () => (
   <Typography variant="body2" color="text.secondary">
     {'Copyright © '}
-    <Link color="inherit" href="https://mui.com/">
-      Your Website
+    <Link color="inherit" href="https://www.google.com">
+      My Portfolio
     </Link>
     {' '}
     {new Date().getFullYear()}

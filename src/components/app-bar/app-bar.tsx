@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -12,8 +13,7 @@ import {
   Button,
   MenuItem,
 } from '@mui/material';
-
-const pages = ['Main Page', 'Contact me', 'Download CV'];
+import pages from './app-bar-settings';
 
 const ResponsiveAppBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -78,9 +78,9 @@ const ResponsiveAppBar: React.FC = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page, i) => (
+                <MenuItem onClick={handleCloseNavMenu} key={i}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -105,13 +105,13 @@ const ResponsiveAppBar: React.FC = () => {
             Portfolio
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map((page, i) => (
               <Button
-                key={page}
+                key={i}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>

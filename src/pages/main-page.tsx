@@ -10,7 +10,7 @@ import ContactMe from 'components/contact-me/contact-me';
 import ContactMeInputs from 'components/contact-me/contact-me-inputs';
 import AppsIveBuiltSection from 'components/my-apps/apps-ive-build-section';
 import StickyFooter from 'components/footer/footer';
-import ResponsiveAppBar from '../components/form-controls/app-bar';
+import ResponsiveAppBar from '../components/app-bar/app-bar';
 
 const MainPage: React.FC = () => (
   <Container>
