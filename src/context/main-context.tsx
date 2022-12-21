@@ -1,5 +1,9 @@
-import { createContext } from 'react';
+import * as React from 'react';
 
-const MainContext = createContext(undefined);
+type MainContextType = {
+    profilePicture: string | undefined,
+    setProfilePicture: React.Dispatch<React.SetStateAction<undefined>>;
+};
 
+const MainContext = React.createContext<MainContextType | undefined>(undefined);
 export default MainContext;

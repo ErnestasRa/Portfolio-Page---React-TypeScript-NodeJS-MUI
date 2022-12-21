@@ -21,7 +21,7 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
     description,
     link,
 }) => (
-  <Card sx={{ maxWidth: 345 }}>
+  <Card sx={{ maxWidth: 345, mb: '1vh', textAlign: 'center' }}>
     <CardMedia
       component="img"
       alt="green iguana"
@@ -38,7 +38,7 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
       </Typography>
     </CardContent>
     <CardActions>
-      <Link href={link} sx={{ textAlign: 'center' }}>
+      <Link href={link} sx={{ textAlign: 'center', textDecoration: 'none' }}>
         View Github Code
       </Link>
     </CardActions>
