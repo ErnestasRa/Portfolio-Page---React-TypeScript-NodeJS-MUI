@@ -1,7 +1,12 @@
-const pages = [
+type PagesType = {
+    name: string,
+    to: string,
+};
+
+const pages: PagesType[] = [
     {
-        name: 'My Resume',
-        to: '/resume',
+        name: 'Home',
+        to: '/',
     },
     {
         name: 'My Hobbies',

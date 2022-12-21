@@ -12,6 +12,7 @@ import {
   Container,
   Button,
   MenuItem,
+  Link,
 } from '@mui/material';
 import pages from './app-bar-settings';
 
@@ -79,9 +80,11 @@ const ResponsiveAppBar: React.FC = () => {
               }}
             >
               {pages.map((page, i) => (
-                <MenuItem onClick={handleCloseNavMenu} key={i}>
-                  <Typography textAlign="center">{page.name}</Typography>
-                </MenuItem>
+                <Link href={page.to} key={i}>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page.name}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -106,13 +109,14 @@ const ResponsiveAppBar: React.FC = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, i) => (
-              <Button
-                key={i}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page.name}
-              </Button>
+              <Link href={page.to} key={i}>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  {page.name}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
