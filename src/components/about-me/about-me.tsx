@@ -4,6 +4,7 @@ import {
     Typography,
 } from '@mui/material';
 import MediaIcons from './media-icons';
+import MyResume from './my-resume';
 
 const AboutMe: React.FC = () => (
   <Box>
@@ -22,6 +23,7 @@ const AboutMe: React.FC = () => (
       I`am React with TypeScript MERN stack Developer.
     </Typography>
     <MediaIcons />
+    <MyResume />
   </Box>
   );
 

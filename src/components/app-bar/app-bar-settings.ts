@@ -9,12 +9,12 @@ const pages: PagesType[] = [
         to: '/',
     },
     {
-        name: 'My Hobbies',
-        to: '/hobbies',
-    },
-    {
         name: 'My Skills',
         to: '/skills',
+    },
+    {
+        name: 'My Hobbies',
+        to: '/hobbies',
     },
 ];
 
