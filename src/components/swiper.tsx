@@ -30,8 +30,8 @@ const SwiperComponent: React.FC<SwiperComponentType> = ({ image1, image2, image3
               component="img"
               src={item}
               sx={{
-                width: '30%',
-                height: '40vh',
+                width: { md: '30%', xs: '75%' },
+                height: { md: '40vh', xs: '34vh' },
                 display: 'block',
                 flexDirection: { xs: 'column', md: 'column' },
                 justifyContent: 'center',
