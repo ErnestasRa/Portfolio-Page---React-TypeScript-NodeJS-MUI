@@ -5,6 +5,7 @@ import {
 } from '@mui/material';
 import ResponsiveAppBar from 'components/app-bar/app-bar';
 import StickyFooter from 'components/footer/footer';
+import Motorcycles from 'components/hobbies/motorcycle-hobby';
 
 const MyHobbies:React.FC = () => (
   <Container>
@@ -17,7 +18,7 @@ const MyHobbies:React.FC = () => (
       mt: '3vh',
     }}
     >
-      Hi
+      <Motorcycles />
     </Paper>
     <StickyFooter />
   </Container>

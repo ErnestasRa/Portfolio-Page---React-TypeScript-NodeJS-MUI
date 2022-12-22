@@ -1,11 +1,13 @@
 import * as React from 'react';
 import {
     Box,
-    Typography,
 } from '@mui/material';
+import SwiperComponent from './swiper';
 
 const Motorcycles: React.FC = () => (
-  <div>Motorcycles</div>
+  <Box sx={{ width: '50%' }}>
+    <SwiperComponent />
+  </Box>
   );
 
 export default Motorcycles;
