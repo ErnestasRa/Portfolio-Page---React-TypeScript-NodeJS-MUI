@@ -11,7 +11,6 @@ import bike3 from '../../images/bike3.jpg';
 const Motorcycles: React.FC = () => (
   <Box sx={{
     width: '100%',
-
     }}
   >
     <Typography
