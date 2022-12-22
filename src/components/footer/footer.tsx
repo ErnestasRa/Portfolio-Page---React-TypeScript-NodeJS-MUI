@@ -23,6 +23,7 @@ const StickyFooter = () => (
         display: 'flex',
         flexDirection: 'column',
         mt: '2vh',
+        minHeight: '10vh',
       }}
   >
     <CssBaseline />
