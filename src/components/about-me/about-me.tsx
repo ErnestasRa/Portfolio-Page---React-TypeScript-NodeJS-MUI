@@ -21,6 +21,7 @@ const AboutMe: React.FC = () => (
       Hello, I`am Ernestas, 24 years old, motorcycle enthusiast,
       passionate PC gamer and of course,
       one of my biggest hobbies, since I was little - programming.
+      Just recently graduated from CodeAcademy Typescript/React 1060 hours course.
     </Typography>
     <Typography sx={{ textAlign: { md: 'inherit', xs: 'center' }, fontWeight: 600 }}>
       I`am React with TypeScript MERN stack Developer.
