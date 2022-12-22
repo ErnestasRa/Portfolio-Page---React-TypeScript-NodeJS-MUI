@@ -2,7 +2,7 @@
 import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import AdbRoundedIcon from '@mui/icons-material/AdbRounded';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import {
   AppBar,
   Box,
@@ -31,7 +31,7 @@ const ResponsiveAppBar: React.FC = () => {
     <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbRoundedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <EmojiPeopleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -88,7 +88,7 @@ const ResponsiveAppBar: React.FC = () => {
               ))}
             </Menu>
           </Box>
-          <AdbRoundedIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <EmojiPeopleIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap

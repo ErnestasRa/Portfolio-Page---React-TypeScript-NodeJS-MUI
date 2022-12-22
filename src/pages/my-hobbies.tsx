@@ -9,7 +9,14 @@ import StickyFooter from 'components/footer/footer';
 const MyHobbies:React.FC = () => (
   <Container>
     <ResponsiveAppBar />
-    <Paper>
+    <Paper sx={{
+      display: 'flex',
+      flexDirection: { xs: 'column', md: 'row' },
+      alignContent: 'center',
+      alignItems: { xs: 'center', md: 'center' },
+      mt: '3vh',
+    }}
+    >
       Hi
     </Paper>
     <StickyFooter />
