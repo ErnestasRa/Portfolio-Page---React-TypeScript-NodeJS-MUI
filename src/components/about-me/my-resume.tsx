@@ -16,7 +16,7 @@ const MyResume:React.FC = () => (
     mt: '2vh',
     }}
   >
-    <Typography sx={{ textAlign: { md: 'inherit', xs: 'center' }, fontFamily: 'cursive', mt: '1.1vh' }}>
+    <Typography sx={{ textAlign: { md: 'inherit', xs: 'center' }, fontFamily: 'initial', mt: '1.1vh' }}>
       My Resume:
     </Typography>
     <IconButton>
