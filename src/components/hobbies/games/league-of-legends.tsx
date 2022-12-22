@@ -11,7 +11,7 @@ const League:React.FC = () => (
       component="img"
       src={LeaguePic}
       sx={{
-      width: { xs: '75%', md: '30%' },
+      width: { xs: '75%', md: '60%' },
       height: { xs: '10vh', md: '10vh' },
       display: 'block',
       justifyContent: 'center',

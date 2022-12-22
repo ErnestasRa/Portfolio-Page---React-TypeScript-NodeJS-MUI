@@ -11,8 +11,8 @@ const CSGO:React.FC = () => (
       component="img"
       src={CSGOPic}
       sx={{
-      width: { xs: '75%', md: '30%' },
-      height: { xs: '10vh', md: '20vh' },
+      width: { xs: '75%', md: '70%' },
+      height: { xs: '10vh', md: '10vh' },
       display: 'block',
       justifyContent: 'center',
       alignItems: 'center',

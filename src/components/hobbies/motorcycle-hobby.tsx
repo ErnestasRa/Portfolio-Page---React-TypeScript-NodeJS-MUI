@@ -14,9 +14,9 @@ const Motorcycles: React.FC = () => (
     }}
   >
     <Typography
-      variant="h4"
+      variant="h5"
       align="center"
-      fontWeight={700}
+      fontWeight={600}
       sx={{ mt: '2vh' }}
     >
       Motorcycles
