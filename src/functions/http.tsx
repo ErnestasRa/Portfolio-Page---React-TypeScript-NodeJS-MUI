@@ -1,4 +1,4 @@
-const serverIp:string = '159.223.212.20';
+const SERVER_IP = process.env.REACT_APP_SERVER_API_ADDRESS;
 
 const post = async (url:string, data: any) => {
     const options: RequestInit = {
@@ -9,7 +9,7 @@ const post = async (url:string, data: any) => {
       },
       body: JSON.stringify(data),
     };
-    const res = await fetch(`http://${serverIp}:4000/${url}`, options);
+    const res = await fetch(`${SERVER_IP}/${url}`, options);
     return res.json();
   };
 
