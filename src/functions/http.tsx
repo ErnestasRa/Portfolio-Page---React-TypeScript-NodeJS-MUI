@@ -1,4 +1,4 @@
-const serverIp:string = '128.199.61.74';
+const serverIp:string = '159.223.212.20';
 
 const post = async (url:string, data: any) => {
     const options: RequestInit = {

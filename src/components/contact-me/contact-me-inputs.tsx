@@ -31,7 +31,6 @@ const ContactMeInputs: React.FC = () => {
       message: messageRef.current!.value,
     };
     const res = await post('contactme', messageData);
-    console.log(res);
 
     if (res.error) {
       setErrorMessage(res.message);
