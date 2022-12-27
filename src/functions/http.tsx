@@ -9,7 +9,7 @@ const post = async (url:string, data: any) => {
       },
       body: JSON.stringify(data),
     };
-    const res = await fetch(`${SERVER_IP}/${url}`, options);
+    const res = await fetch(`http://${SERVER_IP}/${url}`, options);
     return res.json();
   };
 
