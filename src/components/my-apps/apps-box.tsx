@@ -37,8 +37,19 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
         {description}
       </Typography>
     </CardContent>
-    <CardActions>
-      <Link href={link} sx={{ textAlign: 'center', textDecoration: 'none' }}>
+    <CardActions sx={{
+        textAlign: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 2,
+      }}
+    >
+      <Link
+        href={link}
+        sx={{
+          textDecoration: 'none',
+        }}
+      >
         View Github Code
       </Link>
     </CardActions>
