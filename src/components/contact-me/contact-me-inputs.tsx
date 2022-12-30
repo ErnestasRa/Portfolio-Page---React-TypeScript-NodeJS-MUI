@@ -18,8 +18,8 @@ type MessageDataType = {
 };
 
 const ContactMeInputs: React.FC = () => {
-  const [error, setError] = React.useState(false);
-  const [errorMessage, setErrorMessage] = React.useState('');
+  const [error, setError] = React.useState<boolean>(false);
+  const [errorMessage, setErrorMessage] = React.useState<string>('');
   const nameRef: ContactMeInputsType = React.useRef(null);
   const emailRef: ContactMeInputsType = React.useRef(null);
   const messageRef: ContactMeInputsType = React.useRef(null);
