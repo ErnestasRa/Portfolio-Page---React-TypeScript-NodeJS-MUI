@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 
 const Copyright = () => (
-  <Typography variant="body2" color="text.secondary">
+  <Typography variant="body2" color="#DEDEDE">
     {'Copyright © '}
     <Link color="inherit" href="/">
       My Portfolio
@@ -33,9 +33,7 @@ const StickyFooter = () => (
           py: 3,
           px: 2,
           mt: 'auto',
-          backgroundColor: (theme) => (theme.palette.mode === 'light'
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800]),
+           bgcolor: '#323232',
         }}
     >
       <Container maxWidth="sm">

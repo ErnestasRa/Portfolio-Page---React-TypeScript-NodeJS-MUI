@@ -28,7 +28,7 @@ const ResponsiveAppBar: React.FC = () => {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" sx={{ bgcolor: '#323232' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <EmojiPeopleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -80,7 +80,7 @@ const ResponsiveAppBar: React.FC = () => {
               }}
             >
               {pages.map((page, i) => (
-                <Link href={page.to} key={i}>
+                <Link href={page.to} key={i} sx={{ textDecoration: 'none' }}>
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page.name}</Typography>
                   </MenuItem>
@@ -109,10 +109,15 @@ const ResponsiveAppBar: React.FC = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, i) => (
-              <Link href={page.to} key={i}>
+              <Link href={page.to} key={i} sx={{ textDecoration: 'none' }}>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  sx={{
+                      my: 2,
+                      color: 'white',
+                      display: 'block',
+                      textDecoration: 'none',
+}}
                 >
                   {page.name}
                 </Button>

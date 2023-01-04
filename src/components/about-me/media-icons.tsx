@@ -16,13 +16,13 @@ const MediaIcons: React.FC = () => (
     }}
   >
     <IconButton href="https://www.linkedin.com/in/anarkii/">
-      <LinkedInIcon sx={{ fontSize: '2.5rem' }} />
+      <LinkedInIcon sx={{ fontSize: '2.5rem', color: '#DEDEDE' }} />
     </IconButton>
     <IconButton href="https://www.facebook.com/R.Ernis">
-      <FacebookIcon sx={{ fontSize: '2.5rem' }} />
+      <FacebookIcon sx={{ fontSize: '2.5rem', color: '#DEDEDE' }} />
     </IconButton>
     <IconButton href="https://github.com/ErnestasRa">
-      <GitHubIcon sx={{ fontSize: '2.5rem' }} />
+      <GitHubIcon sx={{ fontSize: '2.5rem', color: '#DEDEDE' }} />
     </IconButton>
   </Box>
   );

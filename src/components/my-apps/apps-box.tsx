@@ -21,7 +21,14 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
     description,
     link,
 }) => (
-  <Card sx={{ maxWidth: 345, mb: '1vh', textAlign: 'center' }}>
+  <Card sx={{
+    maxWidth: 345,
+    mb: '1vh',
+    textAlign: 'center',
+    bgcolor: '#202020',
+    display: 'flex',
+    flexDirection: 'column',
+}}>
     <CardMedia
       component="img"
       alt="green iguana"
@@ -30,10 +37,10 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
       sx={{ objectFit: 'fill' }}
     />
     <CardContent>
-      <Typography gutterBottom variant="h5" component="div">
+      <Typography gutterBottom variant="h5" component="div" sx={{ color: '#DEDEDE' }}>
         {title}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color="text.secondary" sx={{ color: '#DEDEDE' }}>
         {description}
       </Typography>
     </CardContent>
@@ -48,6 +55,8 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
         href={link}
         sx={{
           textDecoration: 'none',
+          color: '#DEDEDE',
+          fontSize: '15px',
         }}
       >
         View Github Code

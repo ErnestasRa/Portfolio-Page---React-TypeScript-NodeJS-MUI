@@ -4,12 +4,13 @@ import {
     Typography,
 } from '@mui/material';
 import MediaIcons from './media-icons';
-import MyResume from './my-resume';
 
 const AboutMe: React.FC = () => (
   <Box>
     <Typography sx={{
     mb: '2vh',
+    fontFamily: 'Manrope',
+    color: '#DEDEDE',
     fontWeight: 600,
     textAlign: { md: 'inherit', xs: 'center' },
 }}
@@ -17,7 +18,7 @@ const AboutMe: React.FC = () => (
       Nice to see you here, welcome!
     </Typography>
     <Typography sx={{
-      color: 'text.secondary',
+      color: '#DEDEDE',
       mb: '2vh',
       fontSize: '0.8rem',
       fontWeight: 600,
@@ -34,13 +35,13 @@ const AboutMe: React.FC = () => (
     <Typography sx={{
       textAlign: { md: 'inherit', xs: 'center' },
       fontWeight: 600,
+      color: '#DEDEDE',
 }}
     >
       I`am React with TypeScript MERN stack Developer.
     </Typography>
 
     <MediaIcons />
-    <MyResume />
   </Box>
   );
 

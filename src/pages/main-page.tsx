@@ -21,12 +21,13 @@ const MainPage: React.FC = () => (
       alignContent: 'center',
       alignItems: { xs: 'center', md: 'center' },
       mt: '3vh',
+      bgcolor: '#323232',
     }}
     >
       <PictureBox />
       <AboutMe />
     </Paper>
-    <Paper sx={{ mt: '2vh' }}>
+    <Paper sx={{ mt: '2vh', bgcolor: '#323232' }}>
       <AppsIveBuilt />
       <AppsIveBuiltSection />
     </Paper>
@@ -34,6 +35,7 @@ const MainPage: React.FC = () => (
     mt: '2vh',
     display: 'flex',
     flexDirection: 'column',
+    bgcolor: '#323232',
    }}
     >
       <ContactMe />

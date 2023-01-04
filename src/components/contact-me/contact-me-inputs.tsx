@@ -52,7 +52,7 @@ return (
     flexDirection: 'column',
     gap: 2,
     width: { xs: '100%', md: '100%' },
-
+    color: 'red',
   }}
   >
     <TextField
@@ -61,7 +61,8 @@ return (
       inputRef={nameRef}
       error={error}
       variant="standard"
-      sx={{ width: { xs: '80%', md: '50vh' } }}
+      sx={{ width: { xs: '80%', md: '50vh' }, input: { color: '#DEDEDE' } }}
+      InputLabelProps={{ sx: { color: '#DEDEDE' } }}
     />
     <TextField
       id="standard-basic"
@@ -69,17 +70,18 @@ return (
       error={error}
       inputRef={emailRef}
       variant="standard"
-      sx={{ width: { xs: '80%', md: '50vh' } }}
+      sx={{ width: { xs: '80%', md: '50vh' }, input: { color: '#DEDEDE' } }}
+      InputLabelProps={{ sx: { color: '#DEDEDE' } }}
     />
     <TextField
       id="standard-multiline-static"
       label="Message"
       inputRef={messageRef}
       error={error}
-      multiline
       rows={4}
       variant="standard"
-      sx={{ width: { xs: '80%', md: '50vh' } }}
+      InputLabelProps={{ sx: { color: '#DEDEDE' } }}
+      sx={{ width: { xs: '80%', md: '50vh' }, input: { color: '#DEDEDE' } }}
     />
     <Typography sx={{ color: 'red' }}>{errorMessage}</Typography>
     <Button onClick={() => createMessage()}>Send me a message!</Button>
