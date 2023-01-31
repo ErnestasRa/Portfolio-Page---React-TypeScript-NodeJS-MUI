@@ -22,12 +22,13 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
     link,
 }) => (
   <Card sx={{
-    maxWidth: 345,
+    maxWidth: 300,
     mb: '1vh',
     textAlign: 'center',
     bgcolor: '#202020',
     display: 'flex',
     flexDirection: 'column',
+    fontFamily: 'MyFont',
 }}>
     <CardMedia
       component="img"
@@ -37,10 +38,10 @@ const AppMediaCard:React.FC<AppMediaCardType> = ({
       sx={{ objectFit: 'fill' }}
     />
     <CardContent>
-      <Typography gutterBottom variant="h5" component="div" sx={{ color: '#DEDEDE' }}>
+      <Typography gutterBottom variant="h5" component="div" sx={{ color: '#E2F516', fontFamily: 'MyFont' }}>
         {title}
       </Typography>
-      <Typography variant="body2" color="text.secondary" sx={{ color: '#DEDEDE' }}>
+      <Typography variant="body2" color="text.secondary" sx={{ color: 'grey', fontFamily: 'MyFont' }}>
         {description}
       </Typography>
     </CardContent>

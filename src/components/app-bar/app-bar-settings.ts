@@ -1,3 +1,5 @@
+import cv from '../../modules/cv.pdf';
+
 type PagesType = {
     name: string,
     to: string,
@@ -5,8 +7,8 @@ type PagesType = {
 
 const pages: PagesType[] = [
     {
-        name: 'Home',
-        to: '/',
+        name: 'Resume',
+        to: cv,
     },
 ];
 

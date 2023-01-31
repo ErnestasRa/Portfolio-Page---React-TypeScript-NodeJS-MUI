@@ -6,39 +6,44 @@ import {
 import MediaIcons from './media-icons';
 
 const AboutMe: React.FC = () => (
-  <Box>
+  <Box sx={{
+    display: 'flex',
+    flexDirection: 'column',
+    width: { xs: '100%', md: '35%' },
+  }}
+  >
     <Typography sx={{
-    mb: '2vh',
-    fontFamily: 'Manrope',
-    color: '#DEDEDE',
-    fontWeight: 600,
-    textAlign: { md: 'inherit', xs: 'center' },
-}}
-    >
-      Nice to see you here, welcome!
-    </Typography>
-    <Typography sx={{
-      color: '#DEDEDE',
-      mb: '2vh',
+      textAlign: { md: 'inherit', xs: 'center' },
+      color: 'gray',
+      fontFamily: 'MyFont',
       fontSize: '0.8rem',
-      fontWeight: 600,
-      textAlign: { md: 'inherit', xs: 'center' },
 
 }}
     >
-      Hello, I`am Ernestas, 24 years old, motorcycle enthusiast,
-      passionate PC gamer and of course,
-      one of my biggest hobbies, since I was little - programming.
-      Just recently graduated from CodeAcademy Typescript/React 1060 hours course.
+      Hi, I`m
+      {' '}
+    </Typography>
+    <Typography sx={{
+      color: '#E2F516',
+      fontSize: '2rem',
+      fontFamily: 'monospace',
+      textAlign: { md: 'inherit', xs: 'center' },
+      width: { xs: '100%', md: '30%' },
+      fontWeight: '500',
+
+}}
+    >
+      Ernestas,
+      {' '}
     </Typography>
 
     <Typography sx={{
       textAlign: { md: 'inherit', xs: 'center' },
-      fontWeight: 600,
-      color: '#DEDEDE',
+      color: 'gray',
+      fontFamily: 'MyFont',
 }}
     >
-      I`am React with TypeScript MERN stack Developer.
+      Full-Stack React Developer
     </Typography>
 
     <MediaIcons />

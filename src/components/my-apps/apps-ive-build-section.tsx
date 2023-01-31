@@ -3,9 +3,9 @@ import {
   Box,
 } from '@mui/material';
 import AppMediaCard from 'components/my-apps/apps-box';
-import BudgetTwitter from '../../images/budgettwitter.jpg';
 import GameRock from '../../images/gamerock.jpg';
 import PortfolioPic from '../../images/portfoliopic.jpg';
+import ReactTable from '../../images/reacttable.jpg';
 
 const AppsIveBuiltSection:React.FC = () => (
   <Box sx={{
@@ -15,14 +15,9 @@ const AppsIveBuiltSection:React.FC = () => (
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
+    mt: '2vh',
      }}
   >
-    <AppMediaCard
-      image={BudgetTwitter}
-      title="Budget Twitter"
-      description="Budget Twitter - made with React, NodeJS, MongoDB, JEST, MaterialUI, Authorization, Middleware etc."
-      link="https://github.com/ErnestasRa/Final-Post-Page-made-with-React-NodeJS-MongoDB-Material-UI"
-    />
     <AppMediaCard
       image={GameRock}
       title="Rock-Paper-Scissors"
@@ -34,6 +29,12 @@ const AppsIveBuiltSection:React.FC = () => (
       title="My Portfolio"
       description="My Portfolio - Made with TypeScript, React, NodeJS, MongoDB, JEST, MaterialUI, Eslint(AirBnb) etc."
       link="https://github.com/ErnestasRa/Portfolio-Page---React-TypeScript-NodeJS-MUI"
+    />
+    <AppMediaCard
+      image={ReactTable}
+      title="React Table"
+      description="Data Fetch from API. Filtering, sorting, Pagination. Made with Typescript, React"
+      link="https://github.com/ErnestasRa/Internship-task--with-React-Typecript"
     />
   </Box>
   );

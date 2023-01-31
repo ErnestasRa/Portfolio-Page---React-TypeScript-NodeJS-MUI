@@ -6,10 +6,10 @@ import {
 import Typography from '@mui/material/Typography';
 
 const AppsIveBuilt:React.FC = () => (
-  <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-    <TerminalIcon sx={{ fontSize: { xs: '5vh', md: '8vh' }, color: '#DEDEDE' }} />
+  <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+    <TerminalIcon sx={{ fontSize: { xs: '2vh', md: '4vh' }, color: '#DEDEDE' }} />
     <Typography sx={{
-      fontFamily: 'initial',
+      fontFamily: 'MyFont',
       mt: { xs: '1vh', md: '2vh' },
       fontWeight: 600,
       color: '#DEDEDE',

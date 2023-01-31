@@ -28,7 +28,7 @@ const ResponsiveAppBar: React.FC = () => {
   };
 
   return (
-    <AppBar position="sticky" sx={{ bgcolor: '#323232' }}>
+    <AppBar position="sticky" sx={{ bgcolor: '#202020' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <EmojiPeopleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -40,7 +40,7 @@ const ResponsiveAppBar: React.FC = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'MyFont',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
@@ -48,6 +48,7 @@ const ResponsiveAppBar: React.FC = () => {
             }}
           >
             Portfolio
+
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -80,9 +81,18 @@ const ResponsiveAppBar: React.FC = () => {
               }}
             >
               {pages.map((page, i) => (
-                <Link href={page.to} key={i} sx={{ textDecoration: 'none' }}>
+                <Link
+                  href={page.to}
+                  key={i}
+                  sx={{
+                  textDecoration: 'none',
+                  textAlign: 'center',
+                  color: '#DEDEDE',
+                  fontSize: '15px',
+}}
+                >
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page.name}</Typography>
+                    <Typography textAlign="left" sx={{ fontFamily: 'MyFont', color: 'gray' }}>{page.name}</Typography>
                   </MenuItem>
                 </Link>
               ))}
@@ -98,7 +108,7 @@ const ResponsiveAppBar: React.FC = () => {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'MyFont',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
@@ -107,17 +117,36 @@ const ResponsiveAppBar: React.FC = () => {
           >
             Portfolio
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{
+            flexGrow: 1,
+            display: {
+            xs: 'none',
+            md: 'flex',
+            justifyContent: 'right',
+            textDecoration: 'none',
+            color: '#DEDEDE',
+            fontSize: '15px',
+},
+}}
+          >
             {pages.map((page, i) => (
-              <Link href={page.to} key={i} sx={{ textDecoration: 'none' }}>
+              <Link
+                href={page.to}
+                key={i}
+                sx={{
+                textDecoration: 'none',
+                fontFamily: 'MyFont',
+                fontWeight: 600,
+}}
+              >
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{
-                      my: 2,
-                      color: 'white',
-                      display: 'block',
-                      textDecoration: 'none',
-}}
+                    textDecoration: 'none',
+                    color: '#E2F516',
+                    fontSize: '15px',
+                    fontWeight: 500,
+                  }}
                 >
                   {page.name}
                 </Button>
